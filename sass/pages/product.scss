@@ -1,5 +1,7 @@
 @use "../main";
-
+ul {
+  list-style-type: none !important;
+}
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
@@ -270,6 +272,38 @@ header {
   }
 }
 
+// paganition section
+
+#paganition {
+  background: #fbf8ec;
+  padding-bottom: 30px;
+
+  ul {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .page-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+    color: #606060;
+  }
+  .active {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ff6633 !important;
+}
+}
+
+
+
 //   footer
 
 footer {
@@ -335,10 +369,15 @@ footer {
     width: 100%;
     // display: none !important;
   }
+  .input{
+    width: 100% !important;
+  }
   .input1 {
     width: 100% !important;
     input {
+      margin-left: 10px;
       width: 100% !important;
+      flex-grow: 1 !important;
     }
   }
 

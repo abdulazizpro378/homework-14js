@@ -265,7 +265,7 @@ const search_card_products = [
     isLiked: false,
   },
   {
-    id: 15,
+    id: 31,
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
@@ -325,6 +325,25 @@ const massiv33 = [
     isLiked: false,
   },
 ];
+
+const massiv11 = [
+  {
+    name:"157,50 $",
+    img :"images/kow.svg",
+  },
+  {
+    name:"331,50 $",
+    img :"images/cow2.svg",
+  },
+  {
+    name:"154,50 $",
+    img :"images/cow3.svg",
+  },
+  {
+    name:"157,50 $",
+    img :"images/kow.svg",
+  },
+]
 
 const massiv34 = [
   {

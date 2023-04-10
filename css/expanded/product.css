@@ -45,6 +45,10 @@ input:focus {
   display: revert;
 }
 
+ul {
+  list-style-type: none !important;
+}
+
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
@@ -273,6 +277,32 @@ header nav .right a {
   border: 1px solid #ff6633;
 }
 
+#paganition {
+  background: #fbf8ec;
+  padding-bottom: 30px;
+}
+#paganition ul {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#paganition .page-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+  color: #606060;
+}
+#paganition .active {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ff6633 !important;
+}
+
 footer {
   background-image: url(../../images/footer.png);
   background-color: #f9f4e2;
@@ -332,11 +362,16 @@ footer .footer-row .left p {
     background-color: white;
     width: 100%;
   }
+  .input {
+    width: 100% !important;
+  }
   .input1 {
     width: 100% !important;
   }
   .input1 input {
+    margin-left: 10px;
     width: 100% !important;
+    flex-grow: 1 !important;
   }
   .home-row h1 {
     font-size: 36px !important;

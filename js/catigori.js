@@ -17,3 +17,8 @@ function getProductCard1({ img, name }) {
 massiv34.forEach((el) => {
   homeContent1.innerHTML += getProductCard1(el);
 });
+
+
+// maping 1
+
+

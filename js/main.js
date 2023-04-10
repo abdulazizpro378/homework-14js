@@ -1,6 +1,11 @@
 var btnToggle = document.getElementById("toggle");
 const dropdown = document.querySelector(".dropdown");
 
+const open_btn = document.querySelector(".open-modal");
+const close_btn = document.querySelector(".close-modal");
+const modal = document.querySelector(".modal");
+const modal_content = document.querySelector(".modal-content");
+
 function toggle() {
   dropdown.classList.toggle("d-blok");
 }
@@ -48,8 +53,6 @@ popularCard1.className = "popular-card1";
 
 container.append(popularCard1);
 
-// popularCard1.style.display = "flex";
-// popularCard1.style.gridTemplateColumns = "repeat(4, 1fr)";
 
 function getCard(img, name, price) {
   var popularCard = document.createElement("div");
@@ -87,15 +90,10 @@ function getCard(img, name, price) {
   btn.className = "btn";
   btn.textContent = "В корзину";
 
-  //var desc = document.createElement("p");
-  // desc.textContent = content;
 
-  //var price = document.createElement("p");
-  // price.textContent = cost;
 
   popularCardFooter.append(title);
   popularCardFooter.append(titl);
-  // popularCardFooter.append(tit);
   popularCard.append(popularCardBody, popularCardFooter);
   popularCard.append(text1);
   popularCard.appendChild(ma);
@@ -193,6 +191,8 @@ function getCard(img, name) {
 
   var yurak = document.createElement("div");
   yurak.className = "yurak";
+  var a = document.createElement("a");
+  a.href="Tovar.html"
 
   popularCardFooter.append(title);
   // popularCardFooter.append(titl);
@@ -202,7 +202,9 @@ function getCard(img, name) {
   popularCard.appendChild(ma);
   popularCard.appendChild(btn);
   popularCard.appendChild(yurak);
-  return popularCard;
+  a.append(popularCard)
+
+  return a;
 }
 
 search_card_products.sort((a, b) => a.id - b.id);
@@ -365,8 +367,6 @@ function arry(img, name, desc) {
 
   popularCardFooter.append(title, text2);
 
-  // popularCardFooter.append(titl);
-  // popularCardFooter.append(tit);
   popularCard.append(popularCardFooter, popularCardBody);
 
   return popularCard;
@@ -492,4 +492,34 @@ massiv33
   .forEach((el) => {
     let card = ge(el.img, el.name_price, el.desc);
     popularCard1.appendChild(card);
+  });
+
+
+  // ===
+
+
+  function modalShow() {
+    modal.classList.add("modal-show");
+    modal_content.classList.add("modal-content-show");
+  }
+  
+  function modalHide() {
+    modal.classList.remove("modal-show");
+    modal_content.classList.remove("modal-content-show");
+  }
+  
+  open_btn.addEventListener("click", modalShow);
+  
+  close_btn.addEventListener("click", modalHide);
+  
+  window.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modalHide();
+    }
+  });
+  
+  window.addEventListener("keydown", function (e) {
+    if (e.key == "Escape") {
+      modalHide();
+    }
   });
