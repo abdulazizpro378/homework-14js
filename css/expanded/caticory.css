@@ -120,10 +120,15 @@ header nav .like {
 header nav .like2 img {
   margin-left: 15px;
 }
+header nav .like1 {
+  display: flex;
+  flex-direction: column;
+}
 header nav .like1 img {
+  margin-top: 3px;
   margin-left: 22px;
 }
-header nav .like1 a {
+header nav .like1 p {
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -136,11 +141,13 @@ header nav .like1 a {
 }
 header nav .like3 {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
-header nav .like3 a {
+header nav .like3 img {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+header nav .like3 p {
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -155,7 +162,11 @@ header nav .like3 img {
   justify-content: center;
   align-items: center;
 }
-header nav .like2 a {
+header nav .like2 {
+  display: flex;
+  flex-direction: column;
+}
+header nav .like2 p {
   display: block;
   font-style: normal;
   font-weight: 400;

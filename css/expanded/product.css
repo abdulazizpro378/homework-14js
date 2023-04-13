@@ -52,9 +52,12 @@ ul {
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 16;
 }
 header nav {
-  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,10 +127,23 @@ header nav .like {
 header nav .like2 img {
   margin-left: 15px;
 }
-header nav .like1 img {
+header nav .like img {
   margin-left: 22px;
 }
-header nav .like1 a {
+header nav .like .posion-relative {
+  position: relative;
+}
+header nav .like .posion-relative .position-absolutebadge {
+  top: -10px;
+  left: 35px;
+  padding: 2px;
+  font-size: 10px;
+  position: absolute;
+  background-color: #ff6633;
+  border-radius: 20px;
+  color: white;
+}
+header nav .like p {
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -203,6 +219,7 @@ header nav .right a {
 }
 
 #home {
+  padding-top: 70px;
   background: #fbf8ec;
   padding-bottom: 30px;
 }
@@ -226,11 +243,22 @@ header nav .right a {
   grid-column-gap: 20px;
 }
 #home .home-content .home-card {
+  position: relative;
   background: #ffffff;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   max-width: 272px;
   margin-bottom: 50px;
+}
+#home .home-content .home-card .home-posion {
+  top: 0;
+  right: 2px;
+  position: absolute;
+  border: none;
+  background: transparent;
+}
+#home .home-content .home-card .home-posion img {
+  width: 32px;
 }
 #home .home-content .card-body img {
   width: 100%;

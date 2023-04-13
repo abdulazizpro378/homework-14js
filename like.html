@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>Like number</title>
+
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="./css/compressed/product.min.css" />
+    <link rel="stylesheet" href="./css/compressed/like.min.css">
   </head>
   <body>
     <header>
@@ -53,28 +55,27 @@
           <div class="input">
             <form action="#">
               <div class="input1">
-                <input type="text" placeholder="Найти товар" required  class="search-prodact" />
+                <input
+                  type="text"
+                  placeholder="Найти товар"
+                  required
+                  class="search-prodact"
+                />
               </div>
             </form>
           </div>
 
           <div class="like">
             <div class="like1">
-              <a href="./like.html" class="posion-relative cart">
+              <a href="./catigori.html" class="posion-relative cart">
                 <img src="./images/like.svg" alt="like" />
                 <p>Избранное</p>
-                <span
-                class="position-absolutebadge"
-              >
-                0
-            
-              </span>
+                <span class="position-absolutebadge"> 0 </span>
               </a>
-      
             </div>
             <div class="like2">
               <img src="./images/kub.svg" alt="kub" />
-              <a href="">продукты</a>
+              <a href="./product.html">продукты</a>
             </div>
             <div class="like3">
               <img src="./images/karzinka.svg" alt="kub" />
@@ -91,58 +92,20 @@
     </header>
 
     <main>
-      <section id="home">
+      <section id="like-number">
         <div class="container">
-          <div class="home-row">
-            <div class="content">
-              <h1>Все продукты</h1>
-            </div>
+          <div class="like-row">
 
-            <div class="home-content">
-                
-            </div>
+
+
           </div>
-        </div>
-      </section>
-
-      <!-- paganition -->
-      <section id="paganition">
-        <div class="container">
-   
-            <nav class="prodacts-paganition" aria-label="Page navigation example">
-              
-            </nav>
-      
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-row">
-          <div class="left">
-            <img src="./images/footer-logo.png" alt="logo" />
-            <p>Контакты</p>
-            <p>Вакансии</p>
-            <p>Статьи</p>
-            <p>Политика</p>
-          </div>
-          <div class="right">
-            <img src="./images/facebook.svg" alt="instagram" />
-            <img src="./images/tel.svg" alt="" />
-          </div>
-        </div>
-        <div class="footer-end">
-          <p>Дизайн</p>
-          
-          <img src="./images/zzz.svg" alt="zz" />
-        </div>
-      </div>
-    </footer>
     <script src="./js/const.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/product.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/zacas.js"></script>
+    <!-- <script src="./js/product.js"></script> -->
+    <script src="./js/like.js"></script>
   </body>
 </html>

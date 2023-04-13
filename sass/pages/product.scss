@@ -5,9 +5,11 @@ ul {
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 16;
   nav {
-    padding: 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,12 +92,25 @@ header {
         margin-left: 15px;
       }
     }
-    .like1 {
+    .like {
       img {
         margin-left: 22px;
       }
+      .posion-relative {
+        position: relative;
+        .position-absolutebadge {
+          top: -10px;
+          left: 35px;
+          padding: 2px;
+          font-size: 10px;
+          position: absolute;
+          background-color: #ff6633;
+          border-radius: 20px;
+          color: white;
+        }
+      }
 
-      a {
+      p {
         display: block;
         font-style: normal;
         font-weight: 400;
@@ -187,6 +202,7 @@ header {
 // home
 
 #home {
+  padding-top: 70px;
   background: #fbf8ec;
   padding-bottom: 30px;
 
@@ -211,12 +227,23 @@ header {
     grid-column-gap: 20px;
 
     .home-card {
+      position: relative;
       background: #ffffff;
       box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 4px;
       max-width: 272px;
 
       margin-bottom: 50px;
+      .home-posion {
+        top: 0;
+        right: 2px;
+        position: absolute;
+        border: none;
+        background: transparent;
+        img {
+          width: 32px;
+        }
+      }
     }
 
     .card-body {
@@ -294,15 +321,13 @@ header {
     color: #606060;
   }
   .active {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 150%;
-  color: #ff6633 !important;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ff6633 !important;
+  }
 }
-}
-
-
 
 //   footer
 
@@ -369,7 +394,7 @@ footer {
     width: 100%;
     // display: none !important;
   }
-  .input{
+  .input {
     width: 100% !important;
   }
   .input1 {

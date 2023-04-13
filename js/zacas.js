@@ -1,10 +1,12 @@
 let homeContent = document.querySelector(".home-content");
 let searchInput = document.querySelector(".search-prodact");
 let prodactsPgntn = document.querySelector(".prodacts-paganition");
+let Yurakposion = document.querySelector(".home-posion");
+
 let active = 1;
-function getProductCard({ img, name, desc, name_price }) {
+function getProductCard({ img, name, desc, id }) {
   return `
-  <a href="./Tovar.html">
+
   
     <div class="home-card">
     <div class="card-body">
@@ -13,13 +15,20 @@ function getProductCard({ img, name, desc, name_price }) {
     <div class="card-footer">
       <h3>${name}</h3>
       <p>${desc}</p>
+      <button class="home-posion"   onclick="addTocart(${id})">
+      <img src='./images/${
+        cartProducts.find((product) => product.id === id)
+          ? "yurak-qizil"
+          : "yurak-bosh"
+      }.png' alt="logo">
+    </button>
         <img src="./images/logo1.svg" alt="logo1">
         <button class="btn">
             В корзину
         </button>
     </div>
   </div>
-  </a>
+
     `;
 }
 
@@ -101,3 +110,22 @@ function getpage(page) {
   getpro();
   getPagnation();
 }
+
+//==
+
+function addTocart(id) {
+  let finndedProduct = search_card_products.find((pr) => pr.id === id);
+
+  let checkProduct = cartProducts.find((pr) => pr.id == id);
+  if (checkProduct) {
+    cartProducts = cartProducts.filter((product) => product.id !== id);
+  } else {
+    cartProducts.push(finndedProduct);
+  }
+  localStorage.setItem(CART, JSON.stringify(cartProducts));
+  getcart();
+  getpro();
+
+}
+
+

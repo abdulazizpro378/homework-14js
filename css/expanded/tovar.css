@@ -48,9 +48,10 @@ input:focus {
 header {
   background: #ffffff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 16px 0;
 }
 header nav {
-  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -374,6 +375,7 @@ header nav .right a {
   cursor: pointer;
   max-width: 100%;
   width: 504px;
+  height: 440px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s;
@@ -390,6 +392,9 @@ header nav .right a {
   flex-direction: column;
 }
 #delagation .row-left .indicator img {
+  max-width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   margin-top: 8px;
   transition: 0.5s;

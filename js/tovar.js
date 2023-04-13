@@ -74,14 +74,19 @@ function getTovarCard({ img, name, desc, name_price }) {
       <h3>${name}</h3>
       <p>${desc}</p>
         <img src="./images/logo1.svg" alt="logo1">
+   
         <button class="btn">
             В корзину
         </button>
+    
     </div>
+
   </div>
 
     `;
 }
+
+
 
 search_card_products.slice(0,4).forEach((el) => {
   TovarContent.innerHTML += getTovarCard(el);

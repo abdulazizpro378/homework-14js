@@ -89,11 +89,14 @@ header {
       }
     }
     .like1 {
+      display: flex;
+      flex-direction: column;
       img {
+        margin-top: 3px;
         margin-left: 22px;
       }
 
-      a {
+      p {
         display: block;
         font-style: normal;
         font-weight: 400;
@@ -108,12 +111,15 @@ header {
 
     .like3 {
       display: flex;
-      align-items: center;
+
       flex-direction: column;
 
-      justify-content: center;
+      img {
+        margin-left: 10px;
+        margin-top: -5px;
+      }
 
-      a {
+      p {
         display: block;
         font-style: normal;
         font-weight: 400;
@@ -132,7 +138,9 @@ header {
     }
 
     .like2 {
-      a {
+      display: flex;
+      flex-direction: column;
+      p {
         display: block;
         font-style: normal;
         font-weight: 400;

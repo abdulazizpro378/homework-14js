@@ -3,274 +3,374 @@
 const search_card_products = [
   {
     id: 0,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img15.png",
     name: "599,99 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 3.5,
+
     isLiked: false,
   },
   {
     id: 1,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 2,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "159,99 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 5,
+
     isLiked: false,
   },
   {
     id: 3,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "49.39 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 4,
+
     isLiked: false,
   },
   {
     id: 4,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img14.png",
     name: "77,99 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 2,
+
     isLiked: false,
   },
   {
     id: 5,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "159,99 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 6,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img15.png",
     name: "599,99 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 5,
+
     isLiked: false,
   },
   {
     id: 7,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "49,39 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 4,
+
     isLiked: false,
   },
   {
     id: 8,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 2,
+
     isLiked: false,
   },
   {
     id: 9,
+
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 10,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 5,
+
     isLiked: false,
   },
   {
     id: 11,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 4,
+
     isLiked: false,
   },
 
   {
     id: 13,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 14,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 4.5,
+
     isLiked: false,
   },
   {
     id: 15,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 3.5,
+
     isLiked: false,
   },
   {
     id: 16,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img15.png",
     name: "599,99 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 3.5,
+
     isLiked: false,
   },
   {
     id: 17,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 18,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "159,99 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 5,
+
     isLiked: false,
   },
   {
     id: 19,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "49.39 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 4,
+
     isLiked: false,
   },
   {
     id: 20,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img14.png",
     name: "77,99 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 2,
+
     isLiked: false,
   },
   {
     id: 21,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "159,99 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 22,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img15.png",
     name: "599,99 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 5,
+
     isLiked: false,
   },
   {
     id: 23,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "49,39 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 4,
+
     isLiked: false,
   },
   {
     id: 24,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 2,
+
     isLiked: false,
   },
   {
     id: 25,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 26,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 5,
+
     isLiked: false,
   },
   {
     id: 27,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 4,
+
     isLiked: false,
   },
 
   {
     id: 29,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img2.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
     rating: 3,
+
     isLiked: false,
   },
   {
     id: 30,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
     rating: 4.5,
+
     isLiked: false,
   },
   {
     id: 31,
+    fullike: "images/yurak-bosh.png",
+    like: "images/yurak-qizil.png",
     img: "images/result-img3.png",
     name: "44.50 ₽",
     name_price: "50.50 ₽",
     desc: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
     rating: 3.5,
+
     isLiked: false,
   },
 ];
@@ -283,6 +383,7 @@ const massiv2 = [
     name_price: "И получайте бонусы при покупке в магазинах и на сайте",
     desc: "Оформите карту «Северяночка» ",
     rating: 3.5,
+
     isLiked: false,
   },
   {
@@ -328,22 +429,22 @@ const massiv33 = [
 
 const massiv11 = [
   {
-    name:"157,50 $",
-    img :"images/kow.svg",
+    name: "157,50 $",
+    img: "images/kow.svg",
   },
   {
-    name:"331,50 $",
-    img :"images/cow2.svg",
+    name: "331,50 $",
+    img: "images/cow2.svg",
   },
   {
-    name:"154,50 $",
-    img :"images/cow3.svg",
+    name: "154,50 $",
+    img: "images/cow3.svg",
   },
   {
-    name:"157,50 $",
-    img :"images/kow.svg",
+    name: "157,50 $",
+    img: "images/kow.svg",
   },
-]
+];
 
 const massiv34 = [
   {
